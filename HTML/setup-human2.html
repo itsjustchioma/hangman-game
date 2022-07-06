@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup: Human</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" href="">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap"
+     rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+     <link rel="shortcut icon" href="../Images/brush.png" type="image/x-icon">
+      <link rel="stylesheet" href="../CSS/create-account.css">
+      <style>
+        :root {
+  --form-control-color: rebeccapurple;
+  --form-control-disabled: #959495;
+}
+
+
+.form-control {
+  font-family: system-ui, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+.form-control + .form-control {
+  margin-top: 1em;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--form-background);
+  margin: 0;
+
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+}
+
+.flex-container {
+  display: flex;
+  /* flex-direction: row; */
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  padding: 10px;
+  flex: 10%;
+}
+
+.flex-item-right {
+  flex: 20%;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+      </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HANGMAN PICTURE -->
+        <div class="intro-img">
+            <!-- <img src="../Images/hangman.png" alt="Hangman Picture" class="hangmanImage"> -->
+        </div>
+    
+        <!-- HANGMAN TITLE -->
+        <div class="main-title">
+            <h1 class="heading the-title">Setup</h1>
+        </div>
+
+        <p class="pick-enemy select-cat">Select the categories</p>
+
+        <br><br>
+
+        <!-- HANGMAN BUTTONS -->
+        <form action="../HTML/gameboard.html">
+            <div class="flex-container">
+
+                <div class="flex-item-left">
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox-checked" checked />
+                      Bible
+                    </label>
+                  
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox" />
+                      Entertainment
+                    </label>
+                  
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox" />
+                      Food
+                    </label>
+                  
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox" />
+                      Geography
+                    </label>
+                  
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox" />
+                      History
+                    </label>
+                </div>
+    <div class="flex-item-right">
+        <label class="form-control">
+          <input type="checkbox" name="checkbox" />
+          Movies
+        </label>
+      
+        <label class="form-control">
+          <input type="checkbox" name="checkbox" />
+          Music
+        </label>
+      
+        <label class="form-control">
+          <input type="checkbox" name="checkbox" />
+          Random
+        </label>
+      
+        <label class="form-control">
+          <input type="checkbox" name="checkbox" />
+          Science
+        </label>
+        <label class="form-control">
+          <input type="checkbox" name="checkbox" />
+          Sports
+        </label>
+    </div>
+            </div>
+<br><br><br>
+            <div class="btn-cont">
+                <a href=""><button class="btn-create btn-btn">Let's Get Started</button></a>
+            </div>
+
+
+</form>
+    </div>
+
+</body>
+</html>
