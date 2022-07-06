@@ -1,0 +1,29 @@
+.btn-name {
+    padding: 10px 65px 10px 65px;
+    background-color:white;
+}
+
+::placeholder{
+    color: #adb5bd;
+}
+
+.btn-login{
+    font-size: 40px;
+    letter-spacing:3px;
+    border: 5px solid black;
+    border-radius: 12px;
+    margin: 20px 70px 0 70px;
+
+}
+
+.btn-password{
+    padding: 10px 65px 10px 65px;
+}
+
+.heading {
+    margin-top: 70px;
+}
+
+.btn-log2{
+    padding: 10px 232px 10px 232px;
+}
